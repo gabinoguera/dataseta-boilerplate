@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "MultiEdit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "WebSearch",
+      "Task",
+      "ToolSearch",
+      "Bash(*)",
+      "mcp__playwright__*",
+      "mcp__sequentialthinking__*",
+      "mcp__context7__*",
+      "mcp__github__*"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset:*)",
+      "Read(.env)",
+      "Read(.env.*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/scripts/worktree-guard.sh\"",
+            "statusMessage": "Verificando worktree guard..."
+          }
+        ]
+      }
+    ]
+  }
+}
