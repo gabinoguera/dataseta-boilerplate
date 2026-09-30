@@ -38,6 +38,9 @@
 8. Loop: run all tests → if failures → fix → repeat until green
 9. After user confirmation, commit locally (no push)
 
+## Cost optimization
+Lanzar con Sonnet (`claude --model sonnet`) y `effort: "medium"` — son correcciones sobre código existente, no diseño desde cero.
+
 ## Important Notes
 - "All Completed" requires ALL requirements implemented AND all tests green
 - Work entirely locally, no GitHub operations

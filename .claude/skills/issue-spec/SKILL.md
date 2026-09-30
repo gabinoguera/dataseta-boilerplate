@@ -33,6 +33,8 @@ El input es el número de Issue (e.g. `42`).
 
 ## Fase 2 — Exploración del codebase
 
+> **Cost optimization:** Usar `model: "haiku"` y `effort: "low"` para estos agents — son lectura mecánica. Usar el agente `@explore-light` si existe.
+
 Lanzar **2-3 Explore agents en paralelo** con focos específicos basados en el contenido del Issue:
 
 - **Agent 1**: Identificar módulos, servicios y rutas relevantes (cruzar keywords del Issue con archivos y clases)
@@ -76,6 +78,8 @@ Después, sintetizar:
 ---
 
 ## Fase 6 — Consolidación
+
+> **Cost optimization:** Esta fase requiere razonamiento — mantener el modelo de sesión con `effort: "high"`.
 
 Rellenar secciones de síntesis:
 1. **Executive Summary**

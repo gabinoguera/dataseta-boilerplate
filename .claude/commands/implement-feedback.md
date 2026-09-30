@@ -43,6 +43,9 @@
 8. Monitor CI: `gh pr view {pr_number} --json statusCheckRollup,state,mergeable,url`
 9. If CI fails → diagnose, fix, push again. Loop until green.
 
+## Cost optimization
+Lanzar con Sonnet (`claude --model sonnet`) y `effort: "medium"` — son correcciones sobre código existente, no diseño desde cero.
+
 ## Important Notes
 - "All Completed" requires ALL requirements implemented AND all tests green
 - Always use `gh` CLI for GitHub operations

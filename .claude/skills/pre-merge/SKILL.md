@@ -62,6 +62,11 @@ Si hay bloqueantes: **NO ejecutar merge**.
 
 ---
 
+## Cost optimization
+Lanzar con Sonnet (`claude --model sonnet`) y `effort: "low"` — análisis de git es mecánico.
+
+---
+
 ## Reglas
 
 - **NUNCA ejecutar merge sin confirmación explícita**

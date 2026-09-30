@@ -50,3 +50,6 @@
    ```bash
    rm -f .claude/.worktrees_active/feature-issue-$ARGUMENTS
    ```
+
+## Cost optimization
+Lanzar esta sesión con Sonnet (`claude --model sonnet`) — buen balance coste/calidad para TDD. Reservar Opus solo para issues que requieran diseño de arquitectura complejo.

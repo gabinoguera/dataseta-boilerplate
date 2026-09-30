@@ -86,6 +86,11 @@ gh issue comment {N} --body-file .claude/sessions/review_spec_{N}.md
 
 ---
 
+## Cost optimization
+Lanzar con Sonnet (`claude --model sonnet`) y `effort: "medium"` — el review es comparativo, no creativo.
+
+---
+
 ## Reglas
 
 - `AskUserQuestion` SOLO para decisiones de producto
